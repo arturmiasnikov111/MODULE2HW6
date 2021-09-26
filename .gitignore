@@ -12,6 +12,8 @@ syntax glob
 .user
 .userosscache
 .sln.docstates
+.csproj
+.ruleset
 
 # Build results
 [Dd]ebug
