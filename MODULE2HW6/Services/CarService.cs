@@ -56,6 +56,7 @@ namespace MODULE2HW6.Services
             foreach (var item in passengerCars)
             {
                 Console.WriteLine($"Brand: {item.Brand} Price: {item.Price.CarPrice} Fuel Consumption: {item.FuelConsumption}");
+                Console.WriteLine();
             }
         }
 

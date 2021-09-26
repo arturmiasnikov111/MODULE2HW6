@@ -1,3 +1,4 @@
+using System;
 using MODULE2HW6.Enums;
 
 namespace MODULE2HW6.Models.ASegmentCar
@@ -15,11 +16,9 @@ namespace MODULE2HW6.Models.ASegmentCar
             Brand = brand;
             CarSpeed = carSpeed;
             FuelConsumption = fuelConsumption;
-            DaewooBrand = "Daewoo Matiz";
         }
 
-        public override string DaewooBrand { get; init; }
-
+        public override string DaewooBrand { get; init; } = nameof(DaewooMatiz);
         public override Weight Weight { get; init; }
         public override CarColorEnum Color { get; init; }
         public override ManufacturerCountryEnum ManufacturerCountry { get; init; }
