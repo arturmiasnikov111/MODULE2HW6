@@ -4,6 +4,7 @@ using MODULE2HW6.CarsProvider;
 using MODULE2HW6.Enums;
 using MODULE2HW6.Models;
 using MODULE2HW6.Models.ASegmentCar;
+using MODULE2HW6.Models.BSegmentCar.BSegmentChevrolet.ChevroletAveo;
 using MODULE2HW6.Services.Abstractions;
 
 namespace MODULE2HW6.Services
@@ -56,30 +57,6 @@ namespace MODULE2HW6.Services
             foreach (var item in passengerCars)
             {
                 Console.WriteLine($"Brand: {item.Brand} Price: {item.Price.CarPrice} Fuel Consumption: {item.FuelConsumption}");
-                Console.WriteLine();
-            }
-        }
-
-        public void Print(PassengerCar passengerCar)
-        {
-            Console.WriteLine($"---------{Environment.NewLine}Car has been found by Parameters{Environment.NewLine}Brand: {passengerCar.Brand} Price: {passengerCar.Price.CarPrice} Weight {passengerCar.Weight.Value}");
-        }
-
-        public void FindByParameters(int weight, BrandEnum brandEnum)
-        {
-            bool flag = false;
-            foreach (var item in _cars)
-            {
-                if (weight == item.Weight.Value && brandEnum == item.Brand)
-                {
-                    Print(item);
-                    flag = true;
-                }
-            }
-
-            if (!flag)
-            {
-                Console.WriteLine("Nothing has been found according to your search parameters");
             }
         }
     }

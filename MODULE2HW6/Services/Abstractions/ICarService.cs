@@ -10,7 +10,5 @@ namespace MODULE2HW6.Services.Abstractions
         double CarsPrice();
         void SortByFuel();
         void Print(PassengerCar[] passengerCars);
-        void Print(PassengerCar passengerCar);
-        void FindByParameters(int weight, BrandEnum brandEnum);
     }
 }

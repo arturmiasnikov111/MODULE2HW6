@@ -24,7 +24,7 @@ namespace MODULE2HW6.CarsProvider
                     ManufacturerCountryEnum.Ukraine,
                     TransmissionEnum.ManualTransmission,
                     4,
-                    new Price(3000),
+                    new Price(2000),
                     BrandEnum.Daewoo,
                     120,
                     1110),

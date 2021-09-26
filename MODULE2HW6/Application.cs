@@ -1,6 +1,7 @@
 using System;
 using MODULE2HW6.CarsProvider;
 using MODULE2HW6.Enums;
+using MODULE2HW6.Extensions;
 using MODULE2HW6.Models;
 using MODULE2HW6.Models.BSegmentCar.BSegmentChevrolet.ChevroletAveo;
 using MODULE2HW6.Services;
@@ -19,11 +20,11 @@ namespace MODULE2HW6
 
         public void Run()
         {
-            _carService.GetCars();
+            var carService = _carService.GetCars();
             _carService.CarsPrice();
             Console.WriteLine("Car has been sorted by Fuel Consumption");
             _carService.SortByFuel();
-            _carService.FindByParameters(3500, BrandEnum.Chevrolet);
+            Search.FindByParameters(carService, 3500, BrandEnum.Chevrolet);
         }
     }
 }
